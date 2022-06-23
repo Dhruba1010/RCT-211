@@ -1,0 +1,14 @@
+{
+  "todos": [
+    {
+      "id": "0db4d243-83ef-4792-bdda-b50f4f3d62d7",
+      "title": "learn redux",
+      "status": false
+    },
+    {
+      "id": "50045b1c-9f5f-42a5-9ce5-368dd04dae86",
+      "title": "learn reduxx",
+      "status": false
+    }
+  ]
+}
