@@ -1,13 +1,13 @@
 {
   "todos": [
     {
-      "id": "0db4d243-83ef-4792-bdda-b50f4f3d62d7",
-      "title": "learn redux",
+      "id": "134449a2-0013-4395-8d37-cedf3fe64457",
+      "title": "Buy an iPhone",
       "status": false
     },
     {
-      "id": "50045b1c-9f5f-42a5-9ce5-368dd04dae86",
-      "title": "learn reduxx",
+      "id": "96839633-62f2-4613-854f-0cc9849ed938",
+      "title": "Buy an Apple Laptop",
       "status": false
     }
   ]

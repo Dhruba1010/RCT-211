@@ -2,12 +2,14 @@ import React from 'react'
 import { useEffect } from 'react'
 import TodoInput from './TodoInput'
 import TodoList from './TodoList';
-import { useDispatch, useSelector } from 'react-redux';
+import { shallowEqual, useDispatch, useSelector } from 'react-redux';
 import { getTodos } from '../Redux/action';
+import Total from './Total';
+
 
 const Todos = () => {
     const dispatch = useDispatch();
-    const todos = useSelector(store => store);
+    const todos = useSelector(store => store, shallowEqual);
 
     useEffect(() => {
         dispatch(getTodos());
@@ -24,8 +26,8 @@ const Todos = () => {
                     return <TodoList key={t.id} {...t}/>
                 })
             }
-            
         </div>
+        <div><Total /></div>
     </>
   )
 }
