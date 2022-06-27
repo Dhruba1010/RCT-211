@@ -1,0 +1,14 @@
+{
+  "todos": [
+    {
+      "id": "59eb273d-c5af-4338-8076-d3b1c733ab9b",
+      "title": "building todo app",
+      "status": false
+    },
+    {
+      "id": "51ca807d-ffe0-4e53-a47c-6218641b9531",
+      "title": "learning redux",
+      "status": false
+    }
+  ]
+}
