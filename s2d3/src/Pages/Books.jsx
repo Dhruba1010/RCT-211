@@ -1,25 +1,19 @@
 import React from 'react';
-import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
 import BookCard from '../Components/BookCard';
-import { getBooks } from '../Redux/appReducer/action';
+import Filter from '../Components/Filter';
+import Sort from '../Components/Sort';
+
 
 const Books = () => {
-    const dispatch = useDispatch();
-    const books = useSelector(store => store.appReducer.books);
- 
-    useEffect(() => {
-        dispatch(getBooks())
-    },[dispatch])
-
-    console.log(books.book_name);
-
   return (
-    <div>
-      {books?.map(b => {
-        return (<BookCard key={b.id} {...b} />)
-      })}
-        
+    <div style={{display: 'flex', marginLeft: '2rem'}}>
+      <div style={{width: '300px', marginTop: '2rem'}}>
+        <Filter />
+        <Sort />
+      </div>
+      <div style={{display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap:'2rem', margin: 'auto'}}>
+        <BookCard />
+      </div>
     </div>
   )
 }

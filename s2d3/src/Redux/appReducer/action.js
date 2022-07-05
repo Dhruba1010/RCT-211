@@ -22,9 +22,9 @@ export const getBooksFailure = () => {
     }
 }
 
-export const getBooks = () => (dispatch) => {
+export const getBooks = (params) => (dispatch) => {
     dispatch(getBooksRequest());
-    axios.get('/books')
+    axios.get('/books', params)
     .then(r => {
         dispatch(getBooksSuccess(r.data))
     })
