@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useRef } from 'react';
-import PinItem from './PinItem'
+import PinItem from './PinItem';
+import PropTypes from 'prop-types';
 
 const Pin = ({len, setOtpHandler}) => {
   const inputRef = useRef([]);
@@ -49,6 +50,11 @@ const Pin = ({len, setOtpHandler}) => {
         
     </div>
   )
+}
+
+Pin.propTypes = {
+  len: PropTypes.number,
+  setOtpHandler: PropTypes.func,
 }
 
 export default Pin
