@@ -5,8 +5,7 @@ import { authReducer } from './authReducer/authReducer';
 
 
 const rootReducer = combineReducers({
-    appReducer: appReducer,
-    authReducer: authReducer
+    appReducer, authReducer
 })
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

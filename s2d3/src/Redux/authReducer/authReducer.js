@@ -4,6 +4,7 @@ import * as types from './actionTypes';
 const initState = {
     isLoading: false,
     isError: false,
+    isAuth: false,
     token: ''
 }
 
@@ -20,6 +21,7 @@ export const authReducer = (state=initState, action) => {
             return {
                 ...state,
                 isLoading: false,
+                isAuth: true,
                 token: payload,
             }
 
@@ -27,6 +29,8 @@ export const authReducer = (state=initState, action) => {
             return {
                 ...state,
                 isError: true,
+                isAuth: false,
+                token: ''
             }
 
         default:

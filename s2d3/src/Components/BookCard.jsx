@@ -32,8 +32,8 @@ const BookCard = () => {
       {books.length > 0 && 
         books.map(b => {
           return (
-            <Link to={`books/${b.id}`}>
-              <div key={b.id} style={{display: 'flex', flexDirection: 'column', justifyContent: 'start', width: 'fit-content', lineHeight: '1px', marginTop:'4rem'}}>
+            <Link key={b.id} to={`books/${b.id}`}>
+              <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'start', width: 'fit-content', lineHeight: '1px', marginTop:'4rem'}}>
                 <img width='200px' src={b.cover_photo} alt={b.book_name} />
                 <h5>{b.book_name}</h5>
                 <p>{b.release_year}</p>

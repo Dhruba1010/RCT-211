@@ -31,8 +31,8 @@ const Sort = () => {
     <div>
         <h3>Sort</h3>
         <div onChange={handleSort}>
-            <input type="radio" value='asc'  name='sortBy' checked={sortBy === 'asc'} /> Ascending
-            <input type="radio" value='desc' name='sortBy' checked={sortBy === 'desc'} /> Descending
+            <input type="radio" value='asc'  name='sortBy' defaultChecked={sortBy === 'asc'} /> Ascending
+            <input type="radio" value='desc' name='sortBy' defaultChecked={sortBy === 'desc'} /> Descending
         </div>
     </div>
   )
